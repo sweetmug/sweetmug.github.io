@@ -3,11 +3,65 @@
 	<title>SweetMug</title>
 	<link rel="stylesheet" type="text/css" href="mystyle.css">
 	<link rel="icon" href="mug.png" type="image/png" />
+	
+	<style>
+	.container {
+	  position: relative;
+	  width: 50%;
+	}
+
+	.image {
+	  opacity: 1;
+	  display: block;
+	  width: 100%;
+	  height: auto;
+	  transition: .5s ease;
+	  backface-visibility: hidden;
+	}
+
+	.middle {
+	  transition: .5s ease;
+	  opacity: 0;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	  text-align: center;
+	}
+
+	.container:hover .image {
+	  opacity: 0.3;
+	}
+
+	.container:hover .middle {
+	  opacity: 1;
+	}
+
+	.text {
+	  background-color: #000000;
+	  color: white;
+	  font-size: 32px;
+	  padding: 16px 32px;
+	  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+	}
+	</style>
 </head>
 <body>
-<center>
-	<h1>prices</h1>
-</center>
+	<center>
+		<h1>prices</h1>
+		
+	<div class="container">
+	  <img src="kekbogre.png" alt="Avatar" class="image" style="width:100%;">
+	  <div class="middle">
+		<div class="text">6€</div>
+	  </div>
+	</div>
+	
+	
+	
+	</center>
+	
 	<div class="footer"><p><a href="./indexeng.html">back to the homepage</a></p></div>
 </body>
 </html>
